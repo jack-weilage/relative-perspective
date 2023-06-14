@@ -5,7 +5,7 @@ pre-push:
       glob: '*.{js,ts,svelte}'
       run: pnpm eslint --cache {staged_files}
     prettier:
-      glob: '*.{js,ts,svelte}'
+      glob: '*.{js,ts,svelte,yml,eslintrc,prettierrc}'
       run: pnpm prettier --cache --check {staged_files}
     svelte-check:
       run: pnpm run check
@@ -17,5 +17,5 @@ pre-commit:
       glob: '*.{js,ts,svelte}'
       run: pnpm eslint --cache {staged_files}
     prettier:
-      glob: '*.{js,ts,svelte}'
+      glob: '*.{js,ts,svelte,yml,eslintrc,prettierrc}'
       run: pnpm prettier --cache --check {staged_files}
